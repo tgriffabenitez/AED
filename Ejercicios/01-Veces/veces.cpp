@@ -17,7 +17,7 @@ using std::string;
  * @param n Numero de veces que se concatenara el caracter.
  * @return string Cadena resultante con el carácter 'c' repetido 'n' veces.
  */
-string veces(char s, int n);
+string veces(char c, int n);
 
 int main(void)
 {
@@ -29,7 +29,7 @@ int main(void)
     return 0;
 }
 
-string veces(char s, int n)
+string veces(char c, int n)
 {
-    return n > 0 ? s + veces(s, n - 1) : "";
+    return n > 0 ? c + veces(c, n - 1) : "";
 }
