@@ -9,6 +9,7 @@
 #include <string>
 
 using std::string;
+using std::literals::operator""s;
 
 /**
  * @brief Funcion que concatena un carácter 'c' n veces utilizando recursividad.
@@ -21,15 +22,15 @@ string veces(char c, int n);
 
 int main(void)
 {
-    assert(veces('a', -1) == "");
-    assert(veces('a', 0) == "");
-    assert(veces('a', 1) == "a");
-    assert(veces('a', 5) == "aaaaa");
+    assert(veces('a', -1) == ""s);
+    assert(veces('a', 0) == ""s);
+    assert(veces('a', 1) == "a"s);
+    assert(veces('a', 5) == "aaaaa"s);
 
     return 0;
 }
 
 string veces(char c, int n)
 {
-    return n > 0 ? c + veces(c, n - 1) : "";
+    return n > 0 ? c + veces(c, n - 1) : ""s;
 }
