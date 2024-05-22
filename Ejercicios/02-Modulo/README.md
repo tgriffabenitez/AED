@@ -8,14 +8,7 @@ Implementar la funcion `abs()` utilizando el operador ternario en C++. La funcio
 
 La funcion abs se define matematicamente como:
 
-$$
-\mathbb{Z} \to \mathbb{Z} : abs(x) = |x| = \sqrt{x^2} =
-
-\begin{cases}
-    x &  x \geq 0\\
-    -x & e.o.c
-\end{cases}
-$$
+$$\mathbb{Z} \to \mathbb{Z} : abs(x) = |x| = \sqrt{x^2} = \begin{cases} x &  x \geq 0 \\ -x & e.o.c \end{cases}$$
 
 Donde:
 
@@ -40,15 +33,7 @@ int abs(int x)
 
 La funcion $f_3(x)$ se definio matematicamente como
 
-$$
-\mathbb{R} \to \mathbb{R} : f_3(x) =
-
-\begin{cases}
-    x & x < -3 \\
-    x & x > 3 \\
-    -x & e.o.c
-\end{cases}
-$$
+$$\mathbb{R} \to \mathbb{R} : f_3(x) = \begin{cases} x & x < -3 \\ x & x > 3 \\ -x & e.o.c \end{cases}$$
 
 ### Implementacion en C++
 
