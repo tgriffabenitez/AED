@@ -9,7 +9,7 @@ Implementar la funcion IsBisiesto de por estructura
 La funcion **IsBisiestoStruct** se define matematicamente como:
 
 ```math
-\mathbb{N} \to \text{year_t} : \text{IsBisiesto}(n) = (n \>\> \% \>\>4 = 0 \land n \>\> \% \>\> 100 \neq 0) \lor (n \>\> \% \>\> 400 = 0)
+\mathbb{N} \to \text{year\_t} : \text{IsBisiesto}(n) = (n \>\> \% \>\>4 = 0 \land n \>\> \% \>\> 100 \neq 0) \lor (n \>\> \% \>\> 400 = 0)
 ```
 
 Donde:
