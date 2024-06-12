@@ -36,15 +36,8 @@ int main(void) {
 year_t IsBisiestoStruct(unsigned n) {
     year_t bisiesto;
 
-    if (n < 1584 || n > 5323) {
-        bisiesto.value = false;
-        bisiesto.error = true;
-    }
-
-    else {
-        bisiesto.value = ((n % 4 == 0 && n % 100 != 0) || (n % 400 == 0));
-        bisiesto.error = false;
-    }
+    bisiesto.error = n < 1584 || n > 5323;
+    bisiesto.value = !bisiesto.error && ((n % 4 == 0 && n % 100 != 0) || (n % 400 == 0));
 
     return bisiesto;
 }
